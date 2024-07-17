@@ -20,6 +20,15 @@ class EmailService(ABC):
     def fetch_emails(self, query=''):
         raise NotImplementedError
 
+    def mark_as_read(self, email):
+        pass
+
+    def mark_as_un_read(self, email):
+        pass
+
+    def move_message(self, email, label_id):
+        pass
+
 
 class GmailService(EmailService):
     def __init__(self, credentials_file):

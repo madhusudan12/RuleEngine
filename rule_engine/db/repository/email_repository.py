@@ -1,11 +1,9 @@
-
 from rule_engine.db.models.email import Email
 
 from datetime import datetime
 
 import psycopg2
 import psycopg2.extras
-
 
 
 class EmailRepository:
@@ -70,4 +68,3 @@ class EmailRepository:
             rows = cursor.fetchall()
         emails = [Email(row[0], row[1], row[2], row[3], row[4], row[5]) for row in rows]
         return emails
-

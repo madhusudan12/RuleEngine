@@ -1,5 +1,5 @@
-
 from enum import Enum
+
 
 class FieldTypes(Enum):
     DATE_FIELD = "received_date"

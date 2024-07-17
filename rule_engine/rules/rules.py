@@ -1,8 +1,9 @@
 
 from datetime import datetime, timedelta
+from abc import ABC
 
 
-class Rule:
+class Rule(ABC):
     def __init__(self, field, predicate, value):
         self.field = field
         self.predicate = predicate

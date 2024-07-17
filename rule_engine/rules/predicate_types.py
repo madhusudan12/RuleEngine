@@ -1,5 +1,5 @@
-
 from enum import Enum
+
 
 class PredicateTypes(Enum):
     ALL = "All"
@@ -8,4 +8,3 @@ class PredicateTypes(Enum):
     NOT_CONTAINS = "not_contains"
     LESS_THAN = "less_than"
     GREATER_THAN = "greater_than"
-

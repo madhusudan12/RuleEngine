@@ -31,5 +31,5 @@ class RuleProcessor:
         for email in emails:
             for rule_set in self.rule_sets:
                 if rule_set.matches(email):
-                    for action in rule_set.actions:
-                        action.execute(email)
+                    rule_set.execute_actions(email)
+

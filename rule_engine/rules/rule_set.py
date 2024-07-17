@@ -15,3 +15,7 @@ class RuleSet:
         elif self.predicate == PredicateTypes.ALL.value:
             return all(results)
         return False
+
+    def execute_actions(self, email):
+        for action in self.actions:
+            action.execute(email)
